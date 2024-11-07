@@ -1,0 +1,36 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slider {
+    width: 80%;
+}
+
+.item {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+.slides img {
+    width: 700px;
+    height: 400px;
+}
+
+@media screen and (max-width:768px) {
+    .slides img {
+        width: 500px;
+        height: 350px;
+    }
+}
+@media screen and (max-width:640px) {
+    .slides img {
+        width: 350px;
+        height: 200px;
+    }
+}
