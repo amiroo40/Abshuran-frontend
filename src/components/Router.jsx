@@ -49,7 +49,7 @@ const Router = () => {
                     <Route path='new-monthly-journal' element={<NewMonthlyJournal />} />
                 </Route>
                 <Route path='/admin/new-news/:id' element={<EditNews filesName={filesName} setFilesName={setFilesName} />} />
-                {news.map((item) => (
+                {news && news.map((item) => (
                     <Route key={item._id} path={`/${item.cat}/:id`} element={<ShowNews />} />
                 ))}
                 <Route path='/' element={<Home />} />
