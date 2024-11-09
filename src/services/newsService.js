@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL_NEWS;
+const API_URL = `${process.env.REACT_APP_API_URL}/api/news`;
 
 export const getAllNews = () => axios.get(API_URL)
 
